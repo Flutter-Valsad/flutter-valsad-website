@@ -1,17 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
-.ab-container {
+/* .ab-container {
   display: grid;
-  grid-template-columns: 260px 2px 260px 2px 260px 2px 260px;
-  grid-gap: 20px;
+  grid-template-columns: 230px 2px 230px 2px 230px 2px 230px;
+  grid-gap: 12px;
   justify-content: left;
   align-items: center;
   font-family: 'Montserrat';
   overflow-x: auto;
-  white-space: nowrap;
+  white-space: wrap;
   width: 100%;
+} */
+.ab-container{
+  flex-grow:4;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+.about--banner--container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about--banner--container a{
+  padding: 0;
+  display:block;
+  color: #0f33ff;
+  margin-bottom: 250px;
+  align-self: center;
+}
+.next .prev{
+  flex-grow:1;
 
+}
 .ab-card {
   height: 37rem;
   display: inline-flex;
@@ -19,8 +42,11 @@
   flex-direction: column;
   align-items: center;
   color: white;
+  z-index:10;
 } 
-
+.slider--item{
+  display:block;
+}
 .ab-divider {
   background-color: #222831; 
   width: 1px; 
@@ -103,4 +129,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
+}
+@media only screen and (max-width: 400px){
+  .about{
+    margin-top:130px;
+  }
+  .ab-container{
+    flex-direction: column;
+  }
 }
