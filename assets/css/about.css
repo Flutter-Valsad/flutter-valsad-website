@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+.ab-container {
+  display: grid;
+  grid-template-columns: 260px 2px 260px 2px 260px 2px 260px;
+  grid-gap: 20px;
+  justify-content: left;
+  align-items: center;
+  font-family: 'Montserrat';
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.ab-card {
+  height: 37rem;
+  display: inline-flex;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+} 
+
+.ab-divider {
+  background-color: #222831; 
+  width: 1px; 
+  height: 250px;
+  position: relative;
+  bottom: 100px;
+}
+
+.ab-card__name {
+  /* margin-top: 15px; */
+  font-size: 1.3em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ab-card .ab-card__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 5px solid #272133;
+  margin-top: 30px;
+  box-shadow: 0 5px 40px #0f33ff;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ab-card .ab-social-icons {
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-top: 1.5em;
+}
+
+.ab-card .ab-social-icons li {
+  display: inline-block;
+  position: relative;
+  font-size: 1.4em;
+}
+
+.ab-card .ab-social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.8em;
+  left: 0.6em;
+  transition: all 265ms ease-out;
+}
+
+.ab-social-icons a {
+  display: inline-block;
+}
+
+.ab-social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: block;
+  background-color: #0f33ff;
+  transition: all 265ms ease-out;
+}
+
+.ab-social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.ab-social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #0f33ff;
+  background-color: #0f33ff;
+  /* background: -webkit-linear-gradient(45deg, #ff003c, #c648c8); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
