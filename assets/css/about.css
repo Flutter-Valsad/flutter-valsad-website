@@ -87,19 +87,20 @@
   padding: 0;
   list-style: none;
   /* margin-left: auto; */
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 .ab-card .ab-social-icons li {
   display: inline-block;
   position: relative;
   font-size: 1.4em;
+  margin-right: 0.5em;
 }
 
 .ab-card .ab-social-icons i {
   color: #fff;
   position: absolute;
-  top: 0.8em;
+  top: 0.6em;
   left: 0.6em;
   transition: all 265ms ease-out;
 }
