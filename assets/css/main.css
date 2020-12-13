@@ -1363,8 +1363,13 @@ body {
 }
 
 .contact--lockup .modal--options li:nth-child(3) {
-  margin-bottom: 0;
   background-color: #0f33ff;
+  text-transform: uppercase;
+}
+
+.contact--lockup .modal--options li:nth-child(4) {
+  margin-bottom: 0;
+  background-color: #7289d9 ;
   text-transform: uppercase;
 }
 
